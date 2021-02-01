@@ -1,0 +1,17 @@
+.env.txt
+db.sqlite3
+.aws/
+.dockerignore
+.git/
+.gitignore
+.idea/
+.ipynb_checkpoints/
+.vagrant/
+.vscode/
+.mech/
+release/
+*.log
+venv/
+db.sqlite3
+*.ipynb
+locustfile.py
