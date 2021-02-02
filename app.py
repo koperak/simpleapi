@@ -1,11 +1,17 @@
 from flask import Flask, render_template
 import socket
 
-server_ip = socket.gethostbyname(socket.gethostname())
+try: 
+    server_name = socket.gethostname() 
+    server_ip = socket.gethostbyname(server_name) 
+except: 
+    server_name = "Unable to get Hostname"
+    server_ip = "Unable to get IP"
+
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template('index.html', server_ip = server_ip, server_name = socket.gethostname())
+    return render_template('index.html', server_ip = server_ip, server_name = server_name)
     
