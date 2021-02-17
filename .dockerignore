@@ -12,6 +12,7 @@ db.sqlite3
 release/
 *.log
 venv/
+env/
 db.sqlite3
 *.ipynb
 locustfile.py
