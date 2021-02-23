@@ -11,7 +11,7 @@ If you are interested in details of this project please visit complimentary [blo
 
 ## Setup and run
 ```
-git clone https://github.com/koperak/simpleapp.git
+git clone https://github.com/koperak/simpleapp.git && cd simpleapp
 docker build . -t simpleapp
 docker run -d -p 5000:5000 simpleapp
 ```
