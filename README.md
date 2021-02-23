@@ -6,6 +6,9 @@ Web app with Flask server backend and CSS Bulma frontend. The business concept f
 * displaying host and network information - our business 💑 requirements
 * easy to deploy and monitor - container based 📦 with easy metrics
 
+### Explanation
+If you are interested in details of this project please visit complimentary [blog post](https://blog.insc.pl/flask-web-app-with-bulma-frontend-run-on-docker-with-prometheus-metrics)
+
 ## Setup and run
 ```
 git clone https://github.com/koperak/simpleapp.git
