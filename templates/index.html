@@ -6,20 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+  <script type="text/javascript" src="https://intercoolerjs.org/release/intercooler-1.2.3.min.js"></script>
 </head>
 
 <body>
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="notification is-primary">
-        <p class="subtitle primary">
-          Sample Application Here! Running on host:
-        </p>
-        <h1 class="title">
-          {{ server_ip }} 
-          {{ server_name }}
-        </h1>
+      <div class="columns">
+        <div class="column is-full has-background-info">
+          <p class="is-size-1 has-text-dark">
+            Simple Application Here!
+          </p>
+        </div>
       </div>
+      <div class="columns ">
+        <div class="column has-background-primary">
+          <h1 class="title">
+            This host IP: <i>{{ server_ip }}</i> 
+          </h1>
+          <h1 class="title">
+            Host name: <i>{{ server_name }}</i>
+          </h1>          
+        </div>
+        <div class="column has-background-warning">
+          <h1 class="title">
+            Visit count: <i ic-poll="2s" ic-src="/counter" ic-trigger-on="load">
+              This span will poll the server every two seconds...
+            </i> 
+          </h1>
+        </div>        
+      </div>  
+      <div class="columns">
+        <div class="column is-full has-background-danger">
+          <p class="is-size-3 ">
+            Created with ❤ Bulma and Intercooler!
+          </p>
+        </div>
+      </div>      
     </div>
   </section>
 </body>
